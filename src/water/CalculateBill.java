@@ -22,14 +22,11 @@ public class CalculateBill extends JFrame implements ActionListener {
          Font smf = new Font("Bell MT", Font.BOLD, 14);
 
          //frame
-
          setSize(1400,850);
          setTitle("Calculate Bill");
          setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
          setLocationRelativeTo(null);
          setResizable(false);
-
-
 
 //        background
          ImageIcon bg=new ImageIcon("image/home.jpg");
@@ -222,7 +219,6 @@ public class CalculateBill extends JFrame implements ActionListener {
          setVisible(true);
 
     }
-
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == btnCalculateBill) {
             String consumerId = txtConsumerId.getText();
@@ -276,8 +272,6 @@ public class CalculateBill extends JFrame implements ActionListener {
             }catch (Exception ex){
                 ex.printStackTrace();
             }
-
-
 
         }
 
